@@ -1,4 +1,3 @@
-import { it } from "node:test";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FaChartLine, FaHistory, FaRegUser } from "react-icons/fa";
 import { FiMessageCircle } from "react-icons/fi";
