@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="flex">
       <Sidebar isOpen={isOpen} onClose={() => setIsOpen(false)} />
-      <section className="w-full">
+      <section className="w-full border-l border-[#2C2D33]">
         <Navbar onClose={() => setIsOpen(true)} />
         <Sales />
         <TopProducts />

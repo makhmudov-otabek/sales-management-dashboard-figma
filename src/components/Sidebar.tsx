@@ -79,13 +79,13 @@ export default function Sidebar({
     <>
       {isOpen && (
         <div
-          className="fixed inset-0 bg-[#000000bb] bg-opacity-50 z-40"
+          className="fixed inset-0 bg-[#000000bb] z-40"
           onClick={onClose}
         ></div>
       )}
 
       <aside
-        className={`fixed z-50 top-0 left-0 w-[220px] bg-[#171821] p-4 border-r border-[#2C2D33] transform transition-transform duration-300 ease-in-out
+        className={` fixed z-50 top-0 left-0 w-[220px] bg-[#171821] p-4 transform transition-transform duration-300 ease-in-out
           ${isOpen ? "translate-x-0" : "-translate-x-full"}
           md:relative md:translate-x-0 md:block`}
       >
