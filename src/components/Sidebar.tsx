@@ -85,11 +85,11 @@ export default function Sidebar({
       )}
 
       <aside
-        className={` fixed z-50 top-0 left-0 w-[220px] bg-[#171821] p-4 transform transition-transform duration-300 ease-in-out
+        className={`fixed z-50 top-0 left-0 w-[220px] bg-[#171821] p-4 transform transition-transform duration-300 ease-in-out
           ${isOpen ? "translate-x-0" : "-translate-x-full"}
           md:relative md:translate-x-0 md:block`}
       >
-        <div className="sticky top-0">
+        <div className="sticky top-0 pt-2">
           <div className="block md:hidden">
             <div className=" flex justify-between items-center gap-4 mb-4">
               <button className="w-[40px] h-[40px] rounded-full bg-gray-600 overflow-hidden">
