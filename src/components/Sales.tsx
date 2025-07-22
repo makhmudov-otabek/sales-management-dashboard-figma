@@ -8,7 +8,7 @@ import SalesBar from "./SalesBar";
 export default function Sales() {
   return (
     <section className="w-full flex justify-between gap-8 p-4">
-      <div className="flex-3/4 p-4 bg-[#21222D] rounded-xl">
+      <div className="flex-8/12 p-4 bg-[#21222D] rounded-xl">
         <div className="pb-4">
           <p className="font-bold">Today’s Sales</p>
           <p className="text-[#A0A0A0]">Sales Summary</p>
@@ -43,7 +43,7 @@ export default function Sales() {
           </div>
         </div>
       </div>
-      <div className="flex-1/4 bg-[#21222D] rounded-xl">
+      <div className="flex-4/12 bg-[#21222D] rounded-xl">
         <p className="font-bold text-xl p-4 pb-0">Level</p>
         <SalesBar />
         <div className="p-4 border-t border-[#333] flex justify-center items-center">

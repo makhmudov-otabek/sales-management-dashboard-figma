@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Sales from "@/components/Sales";
 import Sidebar from "@/components/Sidebar";
@@ -11,6 +12,7 @@ export default function Home() {
         <Navbar />
         <Sales />
         <TopProducts />
+        <Footer />
       </section>
     </main>
   );

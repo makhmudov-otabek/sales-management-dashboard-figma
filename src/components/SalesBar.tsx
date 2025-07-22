@@ -57,7 +57,11 @@ export default function SalesBar() {
           bottom: 5,
         }}
       >
-        <Tooltip />
+        <Tooltip
+          contentStyle={{
+            background: "#21222D",
+          }}
+        />
         <Bar
           dataKey="uv"
           stackId="a"

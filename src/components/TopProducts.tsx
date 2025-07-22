@@ -63,7 +63,11 @@ function TopProductsChart() {
           </linearGradient>
         </defs>
 
-        <Tooltip />
+        <Tooltip
+          contentStyle={{
+            background: "#21222D",
+          }}
+        />
         <Area
           type="linear"
           dataKey="A"
@@ -110,7 +114,7 @@ export default function TopProducts() {
   ];
   return (
     <section className="w-full flex justify-between gap-8 p-4">
-      <div className="flex-3/4 bg-[#21222D] rounded-xl">
+      <div className="flex-8/12 bg-[#21222D] rounded-xl">
         <p className="text-2xl font-bold mb-4 px-4 py-4">Top Products</p>
         <table className="text-left w-full mb-4">
           <thead>
@@ -161,8 +165,8 @@ export default function TopProducts() {
           </tbody>
         </table>
       </div>
-      <div className="flex-1/4 bg-[#21222D] rounded-xl">
-        <p className="font-bold text-xl p-4 pb-0">Customer Fulfilment</p>
+      <div className="flex-4/12 bg-[#21222D] rounded-xl">
+        <p className="font-bold text-xl p-4 pb-0">Customer Fulfillment</p>
 
         <div className="p-4">
           <TopProductsChart />
