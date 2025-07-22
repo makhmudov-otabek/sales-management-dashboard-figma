@@ -12,10 +12,10 @@ export default function Navbar({ onClose }: { onClose: () => void }) {
   return (
     <header className="w-full p-4 ">
       <div className="grid grid-cols-12 items-center gap-4">
-        <div className="col-span-2 md:hidden">
+        <div className="col-span-2 h-full md:hidden">
           <button
             onClick={onClose}
-            className="text-white text-2xl bg-[#21222D] p-2 rounded-md"
+            className="text-white text-2xl h-full bg-[#21222D] p-2 rounded-md"
           >
             <IoMenu />
           </button>
