@@ -10,7 +10,7 @@ export default function Navbar({ onClose }: { onClose: () => void }) {
   };
 
   return (
-    <header className="w-full p-4 sticky top-0 left-0 bg-[#171821] z-50">
+    <header className="w-full p-4 sticky top-0 left-0 bg-[#171821] z-[49]">
       <div className="grid grid-cols-12 items-center gap-4">
         <div className="col-span-2 h-full md:hidden">
           <button
