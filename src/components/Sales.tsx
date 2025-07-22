@@ -9,7 +9,7 @@ export default function Sales() {
   return (
     <section className="w-full flex justify-between gap-8 p-4">
       <div className="flex-3/4 p-4 bg-[#21222D] rounded-xl">
-        <div className="p-4">
+        <div className="pb-4">
           <p className="font-bold">Today’s Sales</p>
           <p className="text-[#A0A0A0]">Sales Summary</p>
         </div>
@@ -43,15 +43,15 @@ export default function Sales() {
           </div>
         </div>
       </div>
-      <div className="flex-1/4 bg-[#21222D] rounded-xl  overflow-hidden">
+      <div className="flex-1/4 bg-[#21222D] rounded-xl">
         <p className="font-bold text-xl p-4 pb-0">Level</p>
         <SalesBar />
         <div className="p-4 border-t border-[#333] flex justify-center items-center">
-          <p className="flex items-center gap-2 px-4 border-solid border-r border-[#FFFFFF2E]">
+          <p className="flex items-center gap-2 px-4 border-solid border-r border-[#FFFFFF2E] text-[#A0A0A0]">
             <span className="block w-[10px] h-[10px] rounded-full bg-[#A9DFD8]" />
             Volume
           </p>
-          <p className="flex items-center gap-2 px-4">
+          <p className="flex items-center gap-2 px-4 text-[#A0A0A0]">
             <span className="block w-[10px] h-[10px] rounded-full bg-[#2B2B36]" />
             Service
           </p>

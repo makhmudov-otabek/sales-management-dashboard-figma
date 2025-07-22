@@ -66,7 +66,7 @@ export default function Sidebar() {
   ];
 
   return (
-    <aside className="w-[200px] h-screen p-4 border-solid border-r border-[#2C2D33] ">
+    <aside className="w-[220px] sticky p-4 border-solid border-r border-[#2C2D33] ">
       {menuData.map((item) => {
         return (
           <button

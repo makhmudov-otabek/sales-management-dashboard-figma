@@ -61,7 +61,7 @@ export default function SalesBar() {
         <Bar
           dataKey="uv"
           stackId="a"
-          fill="#2B2B36"
+          fill="#A9DFD8"
           className="cursor-pointer"
           barSize={20}
           radius={[5, 5, 0, 0]}
@@ -69,7 +69,7 @@ export default function SalesBar() {
         <Bar
           dataKey="pv"
           stackId="a"
-          fill="#A9DFD8"
+          fill="#2B2B36"
           className="cursor-pointer"
           barSize={20}
           radius={[5, 5, 0, 0]}
