@@ -61,26 +61,22 @@ export default function TopProducts() {
   const productsData = [
     {
       name: "Home Decor Range",
-      popularity:
-        Math.floor(Math.random() * 90) + Math.floor(Math.random() * 10),
+      popularity: 80,
       color: "#FCB859",
     },
     {
       name: "Disney Princess Dress",
-      popularity:
-        Math.floor(Math.random() * 90) + Math.floor(Math.random() * 10),
+      popularity: 45,
       color: "#A9DFD8",
     },
     {
       name: "Bathroom Essentials",
-      popularity:
-        Math.floor(Math.random() * 90) + Math.floor(Math.random() * 10),
+      popularity: 65,
       color: "#28AEF3",
     },
     {
       name: "Apple Smartwatch",
-      popularity:
-        Math.floor(Math.random() * 90) + Math.floor(Math.random() * 10),
+      popularity: 33,
       color: "#F2C8ED",
     },
   ];
