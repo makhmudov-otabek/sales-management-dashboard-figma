@@ -107,7 +107,7 @@ const sharpChartNumber = ({ value, cx, cy }: Needle) => {
 };
 
 const chartValue =
-  Math.floor(Math.random() * 99) + Math.floor(Math.random() * 10);
+  Math.floor(Math.random() * 90) + Math.floor(Math.random() * 10);
 
 const chartData = [
   {
@@ -119,7 +119,7 @@ const chartData = [
 ];
 
 function SharpChart() {
-  const cx = 180;
+  const cx = 150;
   const cy = 150;
   const iR = 90;
   const oR = 140;

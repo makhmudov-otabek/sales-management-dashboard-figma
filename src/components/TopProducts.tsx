@@ -1,43 +1,5 @@
 import { AreaChart, Area, ResponsiveContainer, Tooltip } from "recharts";
 
-// const data = [
-//   {
-//     name: "Page A",
-//     A: 4000,
-//     B: 2400,
-//   },
-//   {
-//     name: "Page B",
-//     A: 3000,
-//     B: 1398,
-//   },
-//   {
-//     name: "Page C",
-//     A: 2000,
-//     B: 800,
-//   },
-//   {
-//     name: "Page D",
-//     A: 2780,
-//     B: 2008,
-//   },
-//   {
-//     name: "Page E",
-//     A: 2890,
-//     B: 2140,
-//   },
-//   {
-//     name: "Page F",
-//     A: 2390,
-//     B: 800,
-//   },
-//   {
-//     name: "Page G",
-//     A: 3490,
-//     B: 2300,
-//   },
-// ];
-
 const data = Array.from({ length: 7 }, (_, i) => ({
   name: "Page " + i,
   A: Math.floor(Math.random() * 3000) + 1000,
