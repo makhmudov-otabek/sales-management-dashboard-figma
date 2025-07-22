@@ -174,9 +174,9 @@ export default function Footer() {
         <SharpChart />
       </div>
       <div className="col-span-3 md:col-span-3 xl:col-span-2 bg-[#21222D] p-4 rounded-xl">
-        <div className="w-full flex justify-between items-center">
+        <div className="w-full md:flex justify-between items-center">
           <p className="text-2xl mb-4">Visitor Insights</p>
-          <p className="flex gap-4 items-center px-3 py-1 rounded-md bg-[#171821]">
+          <p className="mb-4 flex gap-4 items-center px-3 py-1 rounded-md bg-[#171821]">
             <span className="block w-[10px] h-[10px] rounded-full bg-[#FCB859]" />
             New visitors
           </p>
