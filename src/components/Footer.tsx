@@ -84,7 +84,6 @@ function VisitorInsights() {
 
 type Needle = {
   value: number;
-
   cx: number;
   cy: number;
 };
@@ -107,20 +106,27 @@ const sharpChartNumber = ({ value, cx, cy }: Needle) => {
   );
 };
 
+const chartValue =
+  Math.floor(Math.random() * 99) + Math.floor(Math.random() * 10);
+
 const chartData = [
-  { name: "A", value: 80, color: "#A9DFD8" },
-  { name: "B", value: 20, color: "#2B2B36" },
+  {
+    name: "A",
+    value: chartValue,
+    color: "#A9DFD8",
+  },
+  { name: "B", value: 100 - chartValue, color: "#2B2B36" },
 ];
 
 function SharpChart() {
-  const cx = 150;
+  const cx = 180;
   const cy = 150;
   const iR = 90;
   const oR = 140;
   const value = chartData[0].value;
 
   return (
-    <PieChart width={300} height={200} className="">
+    <PieChart width={350} height={200} className="">
       <Pie
         width={350}
         height={150}
@@ -156,8 +162,8 @@ function SharpChart() {
 
 export default function Footer() {
   return (
-    <section className="w-full flex justify-between gap-8 p-4">
-      <div className="flex-1/4 bg-[#21222D] p-4 rounded-xl">
+    <section className="w-full grid grid-cols-3 justify-between gap-8 p-4">
+      <div className="col-span-3 xl:col-span-1 bg-[#21222D] p-4 rounded-xl">
         <p className="text-2xl font-bold">Earnings</p>
         <p className="text-[#87888C] text-sm">Total Expense</p>
         <p className="text-3xl text-[#A9DFD8] font-bold my-3">$6078.76</p>
@@ -167,7 +173,7 @@ export default function Footer() {
 
         <SharpChart />
       </div>
-      <div className="flex-3/4 bg-[#21222D] p-4 rounded-xl">
+      <div className="col-span-3 md:col-span-3 xl:col-span-2 bg-[#21222D] p-4 rounded-xl">
         <div className="w-full flex justify-between items-center">
           <p className="text-2xl mb-4">Visitor Insights</p>
           <p className="flex gap-4 items-center px-3 py-1 rounded-md bg-[#171821]">

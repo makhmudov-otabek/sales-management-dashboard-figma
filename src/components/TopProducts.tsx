@@ -1,42 +1,48 @@
 import { AreaChart, Area, ResponsiveContainer, Tooltip } from "recharts";
 
-const data = [
-  {
-    name: "Page A",
-    A: 4000,
-    B: 2400,
-  },
-  {
-    name: "Page B",
-    A: 3000,
-    B: 1398,
-  },
-  {
-    name: "Page C",
-    A: 2000,
-    B: 800,
-  },
-  {
-    name: "Page D",
-    A: 2780,
-    B: 2008,
-  },
-  {
-    name: "Page E",
-    A: 2890,
-    B: 2140,
-  },
-  {
-    name: "Page F",
-    A: 2390,
-    B: 800,
-  },
-  {
-    name: "Page G",
-    A: 3490,
-    B: 2300,
-  },
-];
+// const data = [
+//   {
+//     name: "Page A",
+//     A: 4000,
+//     B: 2400,
+//   },
+//   {
+//     name: "Page B",
+//     A: 3000,
+//     B: 1398,
+//   },
+//   {
+//     name: "Page C",
+//     A: 2000,
+//     B: 800,
+//   },
+//   {
+//     name: "Page D",
+//     A: 2780,
+//     B: 2008,
+//   },
+//   {
+//     name: "Page E",
+//     A: 2890,
+//     B: 2140,
+//   },
+//   {
+//     name: "Page F",
+//     A: 2390,
+//     B: 800,
+//   },
+//   {
+//     name: "Page G",
+//     A: 3490,
+//     B: 2300,
+//   },
+// ];
+
+const data = Array.from({ length: 7 }, (_, i) => ({
+  name: "Page " + i,
+  A: Math.floor(Math.random() * 3000) + 1000,
+  B: Math.floor(Math.random() * 3000) + 1000,
+}));
 
 function TopProductsChart() {
   return (
@@ -74,7 +80,7 @@ function TopProductsChart() {
           stroke="#A9DFD8"
           fillOpacity={1}
           fill="url(#colorUv)"
-          dot
+          dot={{ fill: "#A9DFD8" }}
         />
         <Area
           type="linear"
@@ -82,7 +88,7 @@ function TopProductsChart() {
           stroke="#F2C8ED"
           fillOpacity={1}
           fill="url(#colorPv)"
-          dot
+          dot={{ fill: "#F2C8ED" }}
         />
       </AreaChart>
     </ResponsiveContainer>
@@ -113,8 +119,8 @@ export default function TopProducts() {
     },
   ];
   return (
-    <section className="w-full flex justify-between gap-8 p-4">
-      <div className="flex-8/12 bg-[#21222D] rounded-xl">
+    <section className="w-full grid grid-cols-3 justify-between gap-8 p-4">
+      <div className="col-span-3 md:col-span-3 xl:col-span-2 bg-[#21222D] rounded-xl">
         <p className="text-2xl font-bold mb-4 px-4 py-4">Top Products</p>
         <table className="text-left w-full mb-4">
           <thead>
@@ -165,7 +171,7 @@ export default function TopProducts() {
           </tbody>
         </table>
       </div>
-      <div className="flex-4/12 bg-[#21222D] rounded-xl">
+      <div className="col-span-3 md:col-span-3 xl:col-span-1 bg-[#21222D] rounded-xl">
         <p className="font-bold text-xl p-4 pb-0">Customer Fulfillment</p>
 
         <div className="p-4">

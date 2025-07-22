@@ -66,19 +66,21 @@ export default function Sidebar() {
   ];
 
   return (
-    <aside className="w-[220px] sticky p-4 border-solid border-r border-[#2C2D33] ">
-      {menuData.map((item) => {
-        return (
-          <button
-            key={item.name}
-            disabled={item.isDisabled}
-            className="flex items-center gap-4 text-[#87888C] hover:text-[#000] hover:bg-[#A9DFD8] disabled:cursor-not-allowed hover:disabled:bg-[#a9dfd8bb] hover:font-bold duration-300 cursor-pointer mb-4 px-4 py-2 rounded-md w-full"
-          >
-            <span>{item.icon}</span>
-            <span>{item.name}</span>
-          </button>
-        );
-      })}
+    <aside className="hidden md:block w-[220px] p-4 border-solid border-r border-[#2C2D33] ">
+      <div className="sticky top-0">
+        {menuData.map((item) => {
+          return (
+            <button
+              key={item.name}
+              disabled={item.isDisabled}
+              className="flex items-center gap-4 text-[#87888C] hover:text-[#000] hover:bg-[#A9DFD8]  disabled:cursor-not-allowed hover:disabled:bg-[#a9dfd8bb] hover:font-bold duration-300 cursor-pointer mb-4 px-4 py-2 rounded-md w-full not-disabled:bg-[#A9DFD8] not-disabled:text-[#000]"
+            >
+              <span>{item.icon}</span>
+              <span>{item.name}</span>
+            </button>
+          );
+        })}
+      </div>
     </aside>
   );
 }
